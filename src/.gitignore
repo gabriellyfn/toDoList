@@ -1,0 +1,30 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Build
+target/
+build/
+bin/
+
+# Gradle
+.gradle/
+.gradle-cache/
+
+# Maven
+.settings/
+.classpath
+.project
+
+# VSCode
+.vscode/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Outros
+.DS_Store
+*.log
