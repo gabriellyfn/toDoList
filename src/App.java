@@ -1,4 +1,5 @@
 //Primeiro projeto pessoal em java: To Do List!
+//OBS: A fim de obter uma aprendizagem maior, todas as linhas do meu código possuem comentários.
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -8,9 +9,34 @@ class Tarefa { //Abaixo são os atributos da classe Tarefas
     boolean concluida;
 
     //Criando um Método Construtor
-    public Tarefa(String aFazer, boolean concluida) {
+    public Tarefa(String aFazer) {
         this.aFazer = aFazer;
         this.concluida = false; //toda tarefa começa pendente 
+    }
+}
+
+class GereciadorTarefas { 
+    //Abaixo estou declarando uma lista
+    ArrayList<Tarefa> lista; //Criando um "lugar" chamado lista, que irá guardar várias Tarefas
+
+    public GereciadorTarefas() { //Construtor da classe
+        lista = new ArrayList<>(); //Criando uma lista vazia
+    }
+
+    public void adicionarTarefa (String descricao) {
+        Tarefa t = new Tarefa(descricao); //A tarefa é definida com a descrição, e será armazeada na variavel local 't'
+        lista.add(t); //Adicionando a tarefa na lista
+        System.out.println("Tarefa adicionada com sucesso.");
+    }
+
+    public void listarTarefa() {
+        if (lista.isEmpty()) {
+            System.out.println("Lista de Tarefas vazia, adicione uma tarefa")
+        }
+    }
+
+    public void removerTarefa() {
+
     }
 }
 
