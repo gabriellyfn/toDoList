@@ -1,6 +1,7 @@
-## Getting Started
+## To do list / Tarefas a fazer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Um projeto simples de Lista de Tarefas (To-Do List) sendo desenvolvido em Java, com foco em prática de POO (Programação Orientada a Objetos) e organização de código.
+O objetivo é permitir que o usuário crie, visualize, conclua e remova tarefas de forma prática pelo terminal.
 
 ## Folder Structure
 
